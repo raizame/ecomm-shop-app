@@ -85,9 +85,9 @@ body {
 }
 @media (max-width: 600px) {
   .product-grid {
-    grid-template-columns: repeat(2, minmax(0, auto)); /* auto-size columns */
-    justify-content: center; /* center the grid */
-    gap: 1rem; /* optional: reduce spacing */
+    grid-template-columns: repeat(2, minmax(0, auto));
+    justify-content: center; 
+    gap: 1rem; 
   }
 }
 
@@ -155,10 +155,12 @@ body {
 .cart-item-img {
   width: 72px;
   height: 72px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 6px;
   flex: 0 0 72px;
+  background: #fff; 
 }
+
 
 .cart-info {
   display: flex;
