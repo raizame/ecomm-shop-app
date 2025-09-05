@@ -37,17 +37,24 @@ body {
 }
 
 .hamburger {
+  display: none; 
   font-size: 1.5rem;
   background: none;
   border: none;
   color: #fff;
   cursor: pointer;
   user-select: none;
-  transition: transform 0.4s ease; 
+  transition: transform 0.4s ease;
 }
 
 .hamburger.open {
-  transform: rotate(-90deg); 
+  transform: rotate(-90deg);
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;   
+  }
 }
 
 
