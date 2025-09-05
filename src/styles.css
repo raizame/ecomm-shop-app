@@ -85,9 +85,12 @@ body {
 }
 @media (max-width: 600px) {
   .product-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, auto)); /* auto-size columns */
+    justify-content: center; /* center the grid */
+    gap: 1rem; /* optional: reduce spacing */
   }
 }
+
 
 .product-card {
   border: 1px solid #ddd;
